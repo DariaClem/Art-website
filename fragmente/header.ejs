@@ -1,0 +1,30 @@
+<header id="introducere">
+    <h1 title="Apasa tasta 'esc' și încarcă pagina. Vei observa că titlul va avea culoarea din acel moment.">Cafea
+        la
+        muzeu</h1>
+    <br>
+    <br>
+    <nav>
+        <label for="chk-meniu"><img id="imagine_meniu" src="./resources/images/menu.png" alt="meniu"></label>
+        <input type="checkbox" id="chk-meniu">
+        <ul class="meniu">
+            <li>
+                <a href="/index">Acasă</a>
+                <ul class="submeniu">
+                    <li><a href="/index#detalii">Perspectivă</a></li>
+                    <li><a href="/index#istoric">Scurt istoric</a></li>
+                    <li><a href="/index#contact">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="/inregistrare">Înregistrare</a></li>
+            <% if(locals.utilizator) { %>
+
+                <li>
+                    <div>Logat <%- locals.utilizator.username %></div>
+                </li>
+                <li><a href="/logout">Logout</a></li>
+            <% } %>
+        </ul>
+    </nav>
+
+</header>

@@ -1,0 +1,739 @@
+#buton {
+    background-color: transparent;
+    background-image: url("../images/soare.png");
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    box-shadow: 2px 2px 7px #415870;
+    margin-left: var(--margine-main);
+    margin-top: 10px;
+
+}
+
+#buton:hover {
+    background-image: url("../images/noapte.png");
+    box-shadow: 4px 4px 10px #415870;
+    transition: background 2s;
+}
+
+.dark {
+    color: #d8d2cc;
+    background-color: #080808;
+    background-image: url("../images/fundal1.jpg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 2s;
+}
+
+
+label[for='cantitate'] {
+    margin-left: var(--margine-main);
+}
+
+input[type="reset"] {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px #415870;
+    font-family: "Times New Roman", serif;
+}
+
+input[type='reset']:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: 4px 4px 10px #415870;
+}
+
+input[type='reset']:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px #415870;
+}
+
+
+.dark input[type='reset'] {
+    background-color: transparent;
+    color: #d8d2cc;
+    border: none;
+    box-shadow: 2px 2px 5px rebeccapurple;
+    font-family: "Times New Roman", serif;
+}
+
+.dark input[type='reset']:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: 4px 4px 10px rebeccapurple;
+}
+
+.dark input[type='reset']:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+
+html {
+    width: 100%;
+}
+
+body.dark {
+    min-width: 100%;
+}
+
+.dark h1 {
+    color: #d8d2cc;
+}
+
+.dark #buton {
+    background-image: url("../images/noapte.png");
+    box-shadow: none;
+}
+
+.dark #buton:hover {
+    background-image: url("../images/soare.png");
+    transition: background 2s;
+    box-shadow: none;
+}
+
+.dark::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+.dark::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+    border-radius: 50px;
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+    border-radius: 50px;
+}
+
+.dark::-webkit-scrollbar-corner {
+    background-color: #181818;
+}
+
+.dark ul.meniu li {
+    background-color: #272d33;
+    text-shadow: none;
+}
+
+.dark ul.meniu li:hover {
+    background-color: #494e54;
+    box-shadow: none;
+}
+
+
+html {
+    background-image: linear-gradient(#C8F2EF, #FFCDDD, #EA99D5);
+    background-size: cover;
+    --margine-main: 40px;
+    --inaltime-buton: 2.5em;
+    --dim-text: 17px;
+    font-size: var(--dim-text);
+}
+
+input[type='submit'] {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px #415870;
+    font-family: "Times New Roman", serif;
+}
+
+input[type='submit']:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: 4px 4px 10px #415870;
+}
+
+input[type='submit']:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px #415870;
+}
+
+.dark input[type='submit'] {
+    background-color: transparent;
+    color: #d8d2cc;
+    border: none;
+    box-shadow: 2px 2px 5px rebeccapurple;
+    font-family: "Times New Roman", serif;
+}
+
+.dark input[type='submit']:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: 4px 4px 10px rebeccapurple;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 20%);
+}
+
+.dark input[type='submit']:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+.dark input {
+    background-color: transparent;
+    color: #d8d2cc;
+    border: 1px solid rgba(255, 255, 255, 10%);
+}
+
+body {
+    --culoare-buton: #EA99D5;
+    --culoare-buton-selectat: #B762C1;
+    --mod-afisare-pagina: grid;
+    --culoare-nav: #FFCDDD;
+    --inaltime-meniu: 30px;
+    --dim-border-meniu: 1px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main, header, footer {
+    margin-left: var(--margine-main);
+    margin-right: var(--margine-main);
+}
+
+#container {
+    display: grid;
+    grid-template-areas: "z-detalii z-istoric"
+                         "z-detalii z-istoric"
+                         "z-java z-istoric";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+#detalii {
+    grid-area: z-detalii;
+}
+
+#istoric {
+    grid-area: z-istoric;
+}
+
+#java {
+    grid-area: z-java;
+}
+
+#todolist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dark #todolist li a {
+    color: rgb(216, 210, 204);
+}
+
+#todolist li:nth-of-type(odd) {
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+@font-face {
+    font-family: 'praysire_demoregular';
+    src: url('../fonts/praysiredemo-yw52q-webfont.woff2') format('woff2'),
+    url('../fonts/praysiredemo-yw52q-webfont.woff') format('woff');
+}
+
+h1 {
+    text-align: center;
+    font-family: "praysire_demoregular", serif;
+    font-size: 70px;
+    color: rgb(137, 100, 166);
+}
+
+#licuricii {
+    width: 100%;
+    height: 100%;
+}
+
+ul.meniu {
+    display: flex;
+}
+
+.dark div.dreapta img {
+    content: url("../images/sageata.png");
+}
+
+.dark main a {
+    color: #494e54;
+}
+
+.dark main a:visited {
+    color: #916371;
+}
+
+.dark footer a {
+    color: #494e54;
+}
+
+.dark footer a:visited {
+    color: #916371;
+}
+
+span {
+    font-size: 120%;
+}
+
+div.dreapta {
+    text-align: right;
+}
+
+div.dreapta img {
+    width: 8%;
+    height: 8%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul.meniu li {
+    list-style-type: none;
+    border: var(--dim-border-meniu);
+    height: var(--inaltime-meniu);
+    width: 100px;
+    border-radius: 20px 40px;
+    background-color: #B762C1;
+    text-shadow: 0 0 5px #8946A6;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    transition: background-color 0.5s linear, text-shadow 0.25s linear;
+}
+
+ul.meniu > li:hover {
+    overflow: visible;
+}
+
+ul.meniu li:hover {
+    background-color: #EA99D5;
+    color: white;
+    box-shadow: 0 0 5px #EA99D5;
+}
+
+ul.meniu ul {
+    position: relative;
+    right: var(--dim-border-meniu);
+}
+
+ul.meniu a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.video {
+    padding: 3%;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+}
+
+ul.meniu li a {
+    text-decoration: none;
+    color: #fde5ed;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#chk-meniu, #imagine_meniu {
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    ul.meniu {
+        display: none;
+        position: relative;
+        animation: animatie_meniu 0.7s linear 1;
+    }
+
+    ul.meniu li {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #chk-meniu:checked ~ ul.meniu {
+        display: block;
+    }
+
+    ul.meniu ul {
+        position: absolute;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+    }
+
+    #imagine_meniu {
+        height: var(--inaltime-meniu);
+        width: auto;
+        display: inline-block;
+    }
+
+    #container {
+        grid-template-areas: "z-detalii"
+        "z-java"
+    "z-istoric"
+    "z-contact";
+        grid-template-columns: 1fr;
+    }
+}
+
+#container {
+    counter-reset: nrsectiune;
+}
+
+#container h2::before {
+    counter-increment: nrsectiune;
+    content: counter(nrsectiune, upper-roman) ".";
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@keyframes animatie_meniu {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+        background-color: transparent;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: repeating-linear-gradient(#C8F2EF, #FFCDDD, #EA99D5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(137, 70, 166, 50%);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(137, 70, 166, 100%);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #B762C1;
+}
+
+::-webkit-resizer {
+    background-color: black;
+}
+
+body.f404 {
+    --white: #f1f1f1;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: Montserrat, serif;
+    font-size: 40px;
+    color: var(--white);
+    letter-spacing: 0.7em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div > span {
+    opacity: 0.15;
+}
+
+body.f404 h1 {
+    display: none;
+}
+
+body.f404 header {
+    position: center;
+    margin-top: -500px;
+    margin-left: -240px;
+    opacity: 0.25;
+}
+
+body.f404 header:hover {
+    opacity: 0.75;
+}
+
+body.f404 ul.meniu li {
+    background-color: #272d33;
+    font-size: 15px;
+    letter-spacing: normal;
+    text-shadow: none;
+}
+
+body.f404 ul.meniu li:hover {
+    background-color: #494e54;
+    box-shadow: none;
+}
+
+#explicatie {
+    letter-spacing: normal;
+    opacity: 0.1;
+}
+
+#I {
+    opacity: 1;
+    animation: flickerI 2s linear reverse infinite;
+}
+
+#I::after {
+    content: '';
+    width: 150%;
+    -webkit-box-shadow: -100px 0 60px 100px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -100px 0 60px 100px rgba(255, 255, 255, 1);
+    box-shadow: -87px 0 150px 40px rgba(255, 255, 255, 1);
+}
+
+#L, #G {
+    animation: flickerLG 2s linear reverse infinite;
+    position: relative;
+}
+
+#L::after,
+#L::before {
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    background: var(--white);
+    position: absolute;
+    top: -50%;
+    left: 100%;
+    border-radius: 100%;
+    opacity: 0.05;
+    filter: blur(10px);
+}
+
+#L::after {
+    width: 200px;
+    height: 200px;
+    top: -150%;
+    left: -5%;
+    opacity: 0.1;
+    filter: blur(10px);
+}
+
+#H {
+    animation: flickerH 2s linear reverse infinite
+}
+
+#T {
+    animation: flickerH 2s linear reverse infinite
+}
+
+@keyframes flickerI {
+    0% {
+        opacity: 0.4;
+    }
+    5% {
+        opacity: 0.5;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    15% {
+        opacity: 0.85;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.25;
+    }
+    45% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.85;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flickerLG {
+    0% {
+        opacity: 0.19;
+    }
+    5% {
+        opacity: 0.2;
+    }
+    10% {
+        opacity: 0.25;
+    }
+    15% {
+        opacity: 0.35;
+    }
+    25% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 0.4;
+    }
+    35% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.25;
+    }
+    45% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.35;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes flickerH {
+    0% {
+        opacity: 0.15;
+    }
+    5% {
+        opacity: 0.2;
+    }
+    10% {
+        opacity: 0.12;
+    }
+    15% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0.15;
+    }
+    30% {
+        opacity: 0.4;
+    }
+    35% {
+        opacity: 0.05;
+    }
+    40% {
+        opacity: 0.12;
+    }
+    45% {
+        opacity: 0.15;
+    }
+    60% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.2;
+    }
+    80% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.18;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes flickerT {
+    0% {
+        opacity: 0.01;
+    }
+    5% {
+        opacity: 0.05;
+    }
+    10% {
+        opacity: 0.03;
+    }
+    15% {
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.07;
+    }
+    30% {
+        opacity: 0.1;
+    }
+    35% {
+        opacity: 0.05;
+    }
+    40% {
+        opacity: 0.06;
+    }
+    45% {
+        opacity: 0.1;
+    }
+    60% {
+        opacity: 0.2;
+    }
+    70% {
+        opacity: 0.1;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    90% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
