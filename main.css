@@ -1,3 +1,82 @@
+#buton {
+    background-color: transparent;
+    background-image: url("../images/soare.png");
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    box-shadow: 2px 2px 7px #415870;
+    margin: 10px;
+}
+
+#buton:hover {
+    background-image: url("../images/noapte.png");
+    box-shadow: 4px 4px 10px #415870;
+    transition: background 2s;
+}
+
+.dark {
+    color: #d8d2cc;
+    background-color: #080808;
+    background-image: url("../images/fundal1.jpg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-color 2s;
+}
+
+html {
+    width: 100%;
+}
+
+body.dark {
+    min-width: 100%;
+}
+
+.dark h1 {
+    color: #d8d2cc;
+}
+
+.dark #buton {
+    background-image: url("../images/noapte.png");
+    box-shadow: none;
+}
+
+.dark #buton:hover {
+    background-image: url("../images/soare.png");
+    transition: background 2s;
+    box-shadow: none;
+}
+
+.dark::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+.dark::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+    border-radius: 50px;
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+    background: #333333;
+    border-radius: 50px;
+}
+
+.dark::-webkit-scrollbar-corner {
+    background-color: #181818;
+}
+
+.dark ul.meniu li {
+    background-color: #272d33;
+    text-shadow: none;
+}
+
+.dark ul.meniu li:hover {
+    background-color: #494e54;
+    box-shadow: none;
+}
+
+
 html {
     background-image: linear-gradient(#C8F2EF, #FFCDDD, #EA99D5);
     background-size: cover;
@@ -7,13 +86,62 @@ html {
     font-size: var(--dim-text);
 }
 
+input[type='submit'] {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px #415870;
+    font-family: "Times New Roman", serif;
+}
+
+input[type='submit']:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: 4px 4px 10px #415870;
+}
+
+input[type='submit']:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px #415870;
+}
+
+.dark input[type='submit'] {
+    background-color: transparent;
+    color: #d8d2cc;
+    border: none;
+    box-shadow: 2px 2px 5px rebeccapurple;
+    font-family: "Times New Roman", serif;
+}
+
+.dark input[type='submit']:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: 4px 4px 10px rebeccapurple;
+}
+
+.dark input[type='submit']:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 2px 5px rebeccapurple;
+}
+
+.dark input[type = 'number'] {
+    background-color: transparent;
+    color: #d8d2cc;
+    border: 1px solid #d8d2cc;
+}
+
 body {
     --culoare-buton: #EA99D5;
     --culoare-buton-selectat: #B762C1;
     --mod-afisare-pagina: grid;
     --culoare-nav: #FFCDDD;
     --inaltime-meniu: 30px;
-    --dim-boder-meniu: 1px;
+    --dim-border-meniu: 1px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 main, header, footer {
@@ -24,7 +152,8 @@ main, header, footer {
 #container {
     display: grid;
     grid-template-areas: "z-detalii z-istoric"
-                       "z-detalii z-istoric";
+                         "z-detalii z-istoric"
+                         "z-java z-istoric";
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
 }
@@ -37,6 +166,27 @@ main, header, footer {
     grid-area: z-istoric;
 }
 
+#java {
+    grid-area: z-java;
+}
+
+#todolist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dark #todolist li a {
+    color: rgb(216, 210, 204);
+}
+
+#todolist li:nth-of-type(odd) {
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
 @font-face {
     font-family: 'praysire_demoregular';
     src: url('../fonts/praysiredemo-yw52q-webfont.woff2') format('woff2'),
@@ -45,13 +195,42 @@ main, header, footer {
 
 h1 {
     text-align: center;
-    font-family: "praysire_demoregular";
+    font-family: "praysire_demoregular", serif;
     font-size: 70px;
     color: rgb(137, 100, 166);
 }
 
+#licuricii {
+    width: 100%;
+    height: 100%;
+}
+
 ul.meniu {
     display: flex;
+}
+
+.dark div.dreapta img {
+    content: url("../images/sageata.png");
+}
+
+.dark main a {
+    color: #494e54;
+}
+
+.dark main a:visited {
+    color: #916371;
+}
+
+.dark footer a {
+    color: #494e54;
+}
+
+.dark footer a:visited {
+    color: #916371;
+}
+
+span {
+    font-size: 120%;
 }
 
 div.dreapta {
@@ -75,7 +254,7 @@ ul.meniu li {
     width: 100px;
     border-radius: 20px 40px;
     background-color: #B762C1;
-    text-shadow: 0px 0px 5px #8946A6;
+    text-shadow: 0 0 5px #8946A6;
     text-align: center;
     line-height: 30px;
     overflow: hidden;
@@ -89,7 +268,7 @@ ul.meniu > li:hover {
 ul.meniu li:hover {
     background-color: #EA99D5;
     color: white;
-    box-shadow: 0px 0px 5px #EA99D5;
+    box-shadow: 0 0 5px #EA99D5;
 }
 
 ul.meniu ul {
@@ -149,7 +328,7 @@ ul.meniu li a {
 
     ul.meniu ul {
         position: absolute;
-        left: 0px;
+        left: 0;
         z-index: 100;
         width: 100%;
     }
@@ -162,6 +341,7 @@ ul.meniu li a {
 
     #container {
         grid-template-areas: "z-detalii"
+        "z-java"
     "z-istoric"
     "z-contact";
         grid-template-columns: 1fr;
@@ -200,6 +380,7 @@ ul.meniu li a {
 
 ::-webkit-scrollbar {
     width: 15px;
+
 }
 
 ::-webkit-scrollbar-track {

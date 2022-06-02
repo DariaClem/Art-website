@@ -12,7 +12,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./resources/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/icons/favicon-16x16.png">
-    <link rel="manifest" href="./resources/icons/site.webmanifest">
     <link rel="mask-icon" href="./resources/icons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="./resources/icons/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -24,8 +23,16 @@
 </head>
 
 <body>
+<input type="button" id="buton">
 <header id="introducere">
-    <h1>Cafea la muzeu</h1>
+    <h1 title="Apasa tasta 'esc' și încarcă pagina. Vei observa că titlul va avea culoarea din acel moment.">Cafea
+        la
+        muzeu</h1>
+    <label for="cantitate">Alegeți dimensiunea fontului: </label>
+    <input type="number" id="cantitate" name="cantitate" min="10" max="20" value="15">
+    <input id="sub" type="submit" value="Submit">
+    <br>
+    <br>
     <nav>
         <label for="chk-meniu"><img id="imagine_meniu" src="./resources/images/menu.png" alt="meniu"></label>
         <input type="checkbox" id="chk-meniu">
@@ -43,6 +50,7 @@
             <li><a href="arhitectura.html">Arhitectură</a></li>
         </ul>
     </nav>
+
 </header>
 
 
@@ -91,7 +99,7 @@
                     semnificației aparte. Ține de noi să schimbăm asta.</h4>
             </section>
             <p>Puteți descărca acest wallpaper apăsând click pe fotografie: </p>
-            <div>
+            <div id="poza">
                 <a href="./resources/images/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg" download="Fundal">
                     <img src="./resources/images/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg" alt="Fundal" width="100%">
                 </a>
@@ -131,6 +139,23 @@
                     Cipriano de la Santísima Trinidad Ruiz
                     y Picasso.</p>
             </details>
+        </section>
+        <section id="java">
+            <br>
+            <br>
+            <br>
+            <p id="ptLista"><span id="spann">&#10004; To do list </span>pentru un artist începător</p>
+            <ul id="todolist">
+                <li><a>Pictează cu vopsea neobișnuită (cafea, ceai, vin)</a></li>
+                <li><a>Pictează pe obiecte din casă pe care nu le mai folosești</a></li>
+                <li><a>Schițează peisaje din natură</a></li>
+                <li><a>Reprodu picturi celebre</a></li>
+                <li><a>Pictează o persoană pe piele</a></li>
+                <li><a>Reprodu o caricatură</a></li>
+                <li><a>Pictează o piesă vestimentară</a></li>
+                <li><a>Încearcă să reproduci un obiect din memorie</a></li>
+            </ul>
+            <br>
         </section>
         <section id="istoric">
             <h2>Scurt istoric</h2>
